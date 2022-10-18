@@ -1,0 +1,59 @@
+{
+  "info": {
+    "_postman_id": "a2a62328-9999-4bb9-a26d-4662d5a0a42b",
+    "name": "Product API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "http://localhost:3000/product/mostviewed",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:3000/product/mostviewed",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["product", "mostviewed"],
+          "query": [
+            {
+              "key": "currency",
+              "value": null,
+              "description": "Values: CAD. Default USD",
+              "disabled": true
+            },
+            {
+              "key": "limit",
+              "value": null,
+              "description": "Default: 5",
+              "disabled": true
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:3000/product/1",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:3000/product/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["product", "1"],
+          "query": [
+            {
+              "key": "currency",
+              "value": null,
+              "description": "Default: USD, Supported: CAD",
+              "disabled": true
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
